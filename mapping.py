@@ -9,7 +9,7 @@ def test():
 
 # Call this one please ty
 def calculate_location(marker_list):
-    points = [_find_location(marker) for marker in markers]
+    points = [_find_location(marker) for marker in markers if marker < 20]
     return _calculate_average_location(points)
 
 def _calculate_average_location(xy_list):
@@ -23,10 +23,9 @@ def _calculate_average_location(xy_list):
     return ((tot_x/len(xy_list)),(tot_y/len(xy_list)))
 
 def _find_location(marker):
-    marker.id 
-    marker_rotation = 0 # LOOK UP USING HARRYS CODE
-    marker_x = 0 # LOOK UP USING HARRY'S CODE
-    marker_y = 0 # LOOK UP USING HARRY'S CODE
+    marker_x = markers_table_coords[marker.id][0] # LOOK UP USING HARRY'S CODE
+    marker_y = markers_table_coords[marker.id][1] # LOOK UP USING HARRY'S CODE
+    marker_rotation = markers_table_coords[marker.id][2] # LOOK UP USING HARRYS CODE
 
     marker_relative_angle = marker.orientation.rot_y
 
