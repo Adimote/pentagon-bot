@@ -36,5 +36,6 @@ def _find_location(marker):
 
     x = marker_distance*cos(pi/2 - marker_to_north)
     y = marker_distance*sin(pi/2 - marker_to_north)
+    angle = marker_relative_angle - marker_to_north
 
-    return (x+marker_x,y+marker_y)
+    return (x+marker_x,y+marker_y,angle)
