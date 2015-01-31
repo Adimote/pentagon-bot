@@ -17,25 +17,26 @@ markers_table_coords = [
         (ARENA_SIZE - 1.75 - DIAGONAL_TABLE, ARENA_SIZE - DIAGONAL_TABLE, 3*math.pi/4),
 
         # North wall
-        (ARENA_SIZE - 1.75, ARENA_SIZE), 
-        (ARENA_SIZE - 1.25, ARENA_SIZE),
-        (ARENA_SIZE - 0.75, ARENA_SIZE),
-        (ARENA_SIZE - 0.25, ARENA_SIZE),
+        (ARENA_SIZE - 1.75, ARENA_SIZE,math.pi), 
+        (ARENA_SIZE - 1.25, ARENA_SIZE,math.pi),
+        (ARENA_SIZE - 0.75, ARENA_SIZE,math.pi),
+        (ARENA_SIZE - 0.25, ARENA_SIZE,math.pi),
+
         # North-east wall
-        (ARENA_SIZE, ARENA_SIZE - 0.25),
-        (ARENA_SIZE, ARENA_SIZE - 0.75),
-        (ARENA_SIZE, ARENA_SIZE - 1.25),
-        (ARENA_SIZE, ARENA_SIZE - 1.75),
+        (ARENA_SIZE, ARENA_SIZE - 0.25, (math.pi*3)/4),
+        (ARENA_SIZE, ARENA_SIZE - 0.75, (math.pi*3)/4),
+        (ARENA_SIZE, ARENA_SIZE - 1.25, (math.pi*3)/4),
+        (ARENA_SIZE, ARENA_SIZE - 1.75, (math.pi*3)/4),
 
         # South-east
         (1.75 + DIAGONAL_TABLE, DIAGONAL_TABLE, (2*math.pi)-math.pi/4),
         (ARENA_SIZE - DIAGONAL_TABLE, ARENA_SIZE - 1.75 - DIAGONAL_TABLE, (2*math.pi)-math.pi/4)),
 
         # South wall
-        (0.25, 0),
-        (0.75, 0),
-        (1.25, 0),
-        (1.75, 0),
+        (0.25, 0, 0),
+        (0.75, 0, 0),
+        (1.25, 0, 0),
+        (1.75, 0, 0),
         ]
 
 markers = []
